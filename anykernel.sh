@@ -8,6 +8,7 @@ do.devicecheck=1
 do.initd=0
 do.modules=1
 do.cleanup=0
+do.cleanuponabort=0
 device.name1=maguro
 device.name2=toro
 device.name3=toroplus
