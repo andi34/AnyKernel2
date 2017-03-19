@@ -8,14 +8,14 @@ do.devicecheck=1
 do.initd=0
 do.modules=1
 do.cleanup=0
-device.name1=espresso
-device.name2=espresso3g
-device.name3=espresso-common
-device.name4=
+device.name1=maguro
+device.name2=toro
+device.name3=toroplus
+device.name4=tuna
 device.name5=
 
 # shell variables
-block=/dev/block/platform/omap/omap_hsmmc.1/by-name/KERNEL;
+block=/dev/block/platform/omap/omap_hsmmc.0/by-name/boot;
 
 ## end setup
 

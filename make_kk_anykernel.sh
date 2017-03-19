@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DATE=`eval date +%Y`-`eval date +%m`-`eval date +%d`
-PACKAGENAME=AnyKernel-$DATE-KitKat
+PACKAGENAME=AnyKernel-$DATE-KitKat-tuna
 
 if [ -f $PACKAGENAME.zip ]; then
 	echo "$PACKAGENAME exist already... skipping."
