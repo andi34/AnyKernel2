@@ -2,7 +2,8 @@
 # osm0sis @ xda-developers
 
 ## AnyKernel setup
-# EDIFY properties
+# begin properties
+properties() {
 kernel.string=Android-Andi @ xda-developers
 do.devicecheck=1
 do.modules=1
@@ -13,6 +14,7 @@ device.name2=espresso3g
 device.name3=espresso-common
 device.name4=espressowifi
 device.name5=
+} # end properties
 
 # shell variables
 block=/dev/block/platform/omap/omap_hsmmc.1/by-name/KERNEL;
