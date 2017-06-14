@@ -11,7 +11,7 @@ do.cleanuponabort=0
 device.name1=espresso
 device.name2=espresso3g
 device.name3=espresso-common
-device.name4=
+device.name4=espressowifi
 device.name5=
 
 # shell variables
