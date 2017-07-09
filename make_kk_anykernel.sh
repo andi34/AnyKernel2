@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=`eval date +%Y`-`eval date +%m`-`eval date +%d`
+DATE=`eval date +%Y`-`eval date +%m`-`eval date +%d`-`eval date +%H`-`eval date +%M`
 PACKAGENAME=AnyKernel-$DATE-KitKat-tuna
 
 if [ -f $PACKAGENAME.zip ]; then
