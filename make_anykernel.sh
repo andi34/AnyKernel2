@@ -6,5 +6,5 @@ PACKAGENAME=AnyKernel-$DATE-bacon
 if [ -f $PACKAGENAME.zip ]; then
 	echo "$PACKAGENAME exist already... skipping."
 else
-	zip -r $PACKAGENAME.zip META-INF/ tools/ anykernel.sh zImage
+	zip -r $PACKAGENAME.zip META-INF/ tools/ anykernel.sh zImage zImage-dtb
 fi
