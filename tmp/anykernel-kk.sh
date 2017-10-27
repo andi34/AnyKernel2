@@ -39,7 +39,9 @@ ramdisk_compression=auto;
 
 
 ## Alert of unsupported Android version
-android_ver=$(mount /system; grep "^ro.build.version.release" /system/build.prop | cut -d= -f2; umount /system);
+android_ver=$(mount -o rw,remount -t auto /system;
+              grep "^ro.build.version.release" /system/build.prop | cut -d= -f2;
+              mount -o ro,remount -t auto /system);
 case "$android_ver" in
   "4.4.4") support_status="supported";;
   *) support_status="unsupported";;
