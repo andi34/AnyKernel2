@@ -38,6 +38,15 @@ ramdisk_compression=auto;
 . /tmp/anykernel/tools/ak2-core.sh;
 
 
+## Alert of unsupported Android version
+android_ver=$(mount /system; grep "^ro.build.version.release" /system/build.prop | cut -d= -f2; umount /system);
+case "$android_ver" in
+  "7.1.1"|"7.1.2") support_status="supported";;
+  *) support_status="unsupported";;
+esac;
+ui_print "Running Android $android_ver, your version is $support_status for this release!";
+
+
 ## AnyKernel install
 dump_boot;
 
