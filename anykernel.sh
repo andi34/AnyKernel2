@@ -13,7 +13,18 @@ device.name1=espresso
 device.name2=espresso3g
 device.name3=espresso-common
 device.name4=espressowifi
-device.name5=
+device.name5=p3100
+device.name6=p3110
+device.name7=p3113
+device.name8=p5100
+device.name9=p5110
+device.name10=p5110
+device.name11=espressowifixx
+device.name12=espresso10wifixx
+device.name13=espressorf
+device.name14=espressorfxx
+device.name15=espresso10rf
+device.name16=espresso10rfxx
 } # end properties
 
 # shell variables
