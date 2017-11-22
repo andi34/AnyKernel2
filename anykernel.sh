@@ -30,6 +30,7 @@ device.name16=espresso10rfxx
 # shell variables
 block=/dev/block/platform/omap/omap_hsmmc.1/by-name/KERNEL;
 is_slot_device=0;
+ramdisk_compression=auto;
 
 
 ## AnyKernel methods (DO NOT CHANGE)
