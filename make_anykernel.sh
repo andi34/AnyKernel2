@@ -1,7 +1,11 @@
 #!/bin/bash
 
 DATE=`eval date +%Y`-`eval date +%m`-`eval date +%d`-`eval date +%H`-`eval date +%M`
-PACKAGENAME=AnyKernel-$DATE-bacon
+if [[ ! -z $1 ]]; then
+	PACKAGENAME=AnyKernel-$DATE-bacon-$1
+else
+	PACKAGENAME=AnyKernel-$DATE-bacon
+fi
 
 if [ -f $PACKAGENAME.zip ]; then
 	echo "$PACKAGENAME exist already... skipping."
