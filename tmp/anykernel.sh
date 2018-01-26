@@ -30,7 +30,7 @@ ramdisk_compression=auto;
 ## Alert of unsupported Android version
 android_ver=$(mount /system; grep "^ro.build.version.release" /system/build.prop | cut -d= -f2; umount /system);
 case "$android_ver" in
-  "7.1.1"|"7.1.2") support_status="supported";;
+  "5.0.0"|"5.0.1"|"5.0.2"|"5.1.0"|"5.1.1"|"6.0.0"|"6.0.1"|"7.1.1"|"7.1.2") support_status="supported";;
   *) support_status="unsupported";;
 esac;
 ui_print "Running Android $android_ver..."
