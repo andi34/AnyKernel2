@@ -41,6 +41,12 @@ ramdisk_compression=auto;
 ## AnyKernel install
 dump_boot;
 
+# begin ramdisk changes
+backup_file init.omap4.rc;
+insert_line init.omap4.rc "omaplfb.ko" before "insmod /system/lib/modules/pvrsrvkm.ko" "    insmod /system/lib/modules/omaplfb.ko";
+
+# end ramdisk changes
+
 write_boot;
 
 ## end install
