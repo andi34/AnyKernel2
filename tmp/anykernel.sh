@@ -37,11 +37,11 @@ ramdisk_compression=auto;
 # import patching functions/variables - see for reference
 . /tmp/anykernel/tools/ak2-core.sh;
 
+# system_getprop <prop>
+system_getprop() { grep "^$1=" /system/build.prop | cut -d= -f2; }
 
-## Alert of unsupported Android version
-android_ver=$(mount -o rw,remount -t auto /system;
-              grep "^ro.build.version.release" /system/build.prop | cut -d= -f2;
-              mount -o ro,remount -t auto /system);
+# Alert of unsupported Android version
+android_ver=$(system_getprop "ro.build.version.release");
 case "$android_ver" in
   "5.0.0"|"5.0.1"|"5.0.2"|"5.1.0"|"5.1.1"|"6.0.0"|"6.0.1"|"7.1.1"|"7.1.2") support_status="supported";;
   *) support_status="unsupported";;
