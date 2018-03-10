@@ -26,11 +26,8 @@ ramdisk_compression=auto;
 # import patching functions/variables - see for reference
 . /tmp/anykernel/tools/ak2-core.sh;
 
-# system_getprop <prop>
-system_getprop() { grep "^$1=" /system/build.prop | cut -d= -f2; }
-
 # Alert of unsupported Android version
-android_ver=$(system_getprop "ro.build.version.release");
+android_ver=$(file_getprop /system/build.prop "ro.build.version.release");
 case "$android_ver" in
   "4.4.4") support_status="supported";;
   *) support_status="unsupported";;
