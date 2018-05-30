@@ -3,7 +3,7 @@
 
 ## AnyKernel setup
 # begin properties
-properties() {
+properties() { '
 kernel.string=Android-Andi @ xda-developers
 do.devicecheck=1
 do.modules=1
@@ -25,7 +25,7 @@ device.name13=espressorf
 device.name14=espressorfxx
 device.name15=espresso10rf
 device.name16=espresso10rfxx
-} # end properties
+'; } # end properties
 
 # shell variables
 block=/dev/block/platform/omap/omap_hsmmc.1/by-name/KERNEL;
