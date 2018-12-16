@@ -14,6 +14,7 @@ device.name2=toro
 device.name3=toroplus
 device.name4=tuna
 device.name5=
+supported.versions=4.4.4
 '; } # end properties
 
 # shell variables
