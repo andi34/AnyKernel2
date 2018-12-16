@@ -25,6 +25,7 @@ device.name13=espressorf
 device.name14=espressorfxx
 device.name15=espresso10rf
 device.name16=espresso10rfxx
+supported.versions=5.0.0 - 7.1.2
 '; } # end properties
 
 # shell variables
