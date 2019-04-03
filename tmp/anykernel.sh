@@ -13,7 +13,6 @@ device.name1=maguro
 device.name2=toro
 device.name3=toroplus
 device.name4=tuna
-device.name5=
 supported.versions=5.0.0 - 7.1.2
 '; } # end properties
 
