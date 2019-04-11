@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=`eval date +%Y`-`eval date +%m`-`eval date +%d`-`eval date +%H`-`eval date +%M`
+DATE=`eval date +%Y`-`eval date +%m`-`eval date +%d`
 
 if [ -f ./espresso_defconfig-bin/zImage ]; then
 
