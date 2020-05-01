@@ -1,2 +1,4 @@
 *.zip
 *.patch
+espresso_defconfig-bin
+espresso_kitkat_defconfig-bin
