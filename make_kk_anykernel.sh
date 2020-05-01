@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DATE=`eval date +%Y`-`eval date +%m`-`eval date +%d`
+DATE=`eval date +%Y`-`eval date +%m`-`eval date +%d`-`eval date +%H`-`eval date +%M`
 
 if [ -f ./espresso_kitkat_defconfig-bin/zImage ]; then
 
