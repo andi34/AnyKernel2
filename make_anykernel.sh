@@ -7,8 +7,27 @@ else
 	PACKAGENAME=AnyKernel-$DATE-bacon
 fi
 
-if [ -f $PACKAGENAME.zip ]; then
-	echo "$PACKAGENAME exist already... skipping."
+if [ -f ./bacon_defconfig-bin/zImage ]; then
+
+	cp -fr ./bacon_defconfig-bin/zImage ./
+	cp -fr ./bacon_defconfig-bin/zImage-dtb ./
+
+	if [[ ! -z $1 ]]; then
+		PACKAGENAME=AnyKernel-$DATE-bacon-$1
+	else
+		PACKAGENAME=AnyKernel-$DATE-bacon
+	fi
+
+	if [ -f $PACKAGENAME.zip ]; then
+		echo "$PACKAGENAME exist already... skipping."
+	else
+		zip -r $PACKAGENAME.zip META-INF/ tools/ anykernel.sh zImage zImage-dtb
+	fi
+
+	echo "cleanup"
+	rm -rf zImage
+	rm -rf zImage-dtb
 else
-	zip -r $PACKAGENAME.zip META-INF/ tools/ anykernel.sh zImage zImage-dtb
+	echo "zImage does not exits"
+	exit 1
 fi
